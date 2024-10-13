@@ -311,7 +311,7 @@ a{
         font-size: 1.7rem;
     }
 }
-
+/*Media*/
 .media{
     display: flex;
 }
@@ -324,7 +324,7 @@ a{
 .media__body{
     margin:0 1rem;
 }
-
+/*Quotes*/
 .quote{
     font-style: italic;
     font-size: 3rem;
@@ -362,4 +362,13 @@ a{
     .quote__organizatoin{
         font-size: 1.6rem;
     }
-}    
+}
+/*Grids*/    
+.grid{
+    display: grid;
+}
+@media screen and (min-width:768px){
+    .grid--1x2{
+        grid-template-columns: 1fr 1fr;
+}
+}
