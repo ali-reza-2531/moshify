@@ -145,6 +145,9 @@ a{
 .icon--white{
     fill:#fff;
 }
+.icon--red{
+    fill: #fd4516;
+}
 .icon-container{
     background: #f3f9fa;
     width: 64px;
@@ -194,6 +197,10 @@ a{
 .btn--block{
     width: 100%;
     display: inline-block;
+}
+.btn--streched{
+    padding-left: 6rem;
+    padding-right:6rem;
 }
 .btn--outline{
     border: 2px solid var(--color-heading);
@@ -406,4 +413,63 @@ a{
     .testimonial .quote{
         margin-left: 6rem;
     }
+}
+/*Callouts*/
+.callout{
+    padding: 4rem;
+    border-radius: 5px;
+}
+.callout--primary{
+    background: var(--color-primary);
+    color:#fff;
+}
+.callout__heading{
+    color:#fff;
+    margin-top: 0;
+    font-size: 3rem;
+}
+.callout .btn{
+    justify-self: center;
+    align-self: center;
+}
+.callout__content{
+    text-align: center;
+}
+
+@media screen and (min-width:768px){
+    .callout .grid--1x2{
+        grid-template-columns: 1fr auto;
+    }
+    .callout__content{
+        text-align: left;
+    }
+    .callout .btn{
+    justify-self: start;
+    margin: 0 2rem;
+    }
+}
+.collapsible__header{
+    display: flex;
+    justify-content: space-between;
+}
+.collapsible__heading{
+    margin-top: 0;
+    font-size: 3rem;
+}
+.collapsible--chevron{
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+.collapsible__content{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.collapsible--expanded .collapsible--chevron{
+    transform: rotate(0);
+}
+.collapsible--expanded .collapsible__content{
+    max-height: 100vh;
+    opacity: 1;
 }
